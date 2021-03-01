@@ -1,0 +1,20 @@
+module SevenSegmentDriver ( A3 , A2 , A1 , A0 , E1 , E2 , E3 , a , b , c , d , e , f , g );
+
+input A0 , A1 , A2 , A3 , E1 , E2 , E3 ;
+output a , b , c , d , e , f , g ;
+
+assign a = (~A3 & ~A2 & ~A1 & A0) | (~A3 & A2 & ~A1 & ~A0) | (A3 & ~A2 & A1 & A0) | (A3 & A2 & ~A1 & A0) | E1 | E2 | E3;
+
+assign b = (~A3 & A2 & ~A1 & A0) | (A2 & A1 & ~A0) | (A3 & A1 & A0) | (A3 & A2 & ~A0) | E1 | E2 | E3 ;
+
+assign c = (~A3 & ~A2 & A1 & ~A0) | (A3 & A2 & ~A0) | (A3 & A2 & A1) | E1 | E2 | E3 ;
+
+assign d = (~A3 & ~A2 & ~A1 & A0) | (~A3 & A2 & ~A1 & ~A0) | (A2 & A1 & A0) | (A3 & ~A2 & A1 & ~A0) | E1 | E2 | E3 ;
+
+assign e = (~A3 & A0) | (~A3 & A2 & ~A1) | (~A2 & ~A1 & A0) | E1 | E2 | E3 ;
+
+assign f = (~A3 & ~A2 & A0) | (~A3 & ~A2 & A1) | (~A3 & A1 & A0) | (A3 & A2 & ~A1 & A0) | E1 | E2 | E3 ;
+
+assign g = ((~A3 & ~A2 & ~A1) | (~A3 & A2 & A1 & A0) | (A3 & A2 & ~A1 & ~A0)) &~( E1 | E2 | E3) ;
+
+endmodule

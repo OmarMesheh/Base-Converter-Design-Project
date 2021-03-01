@@ -1,0 +1,7 @@
+Info (10281): Verilog HDL Declaration information at toplevel.v(2): object "D1" differs only in case from object "d1" in the same scope
+Info (10281): Verilog HDL Declaration information at toplevel.v(2): object "D2" differs only in case from object "d2" in the same scope
+Info (10281): Verilog HDL Declaration information at toplevel.v(2): object "D3" differs only in case from object "d3" in the same scope
+Info (10281): Verilog HDL Declaration information at toplevel.v(2): object "D4" differs only in case from object "d4" in the same scope
+Info (10281): Verilog HDL Declaration information at toplevel.v(2): object "D5" differs only in case from object "d5" in the same scope
+Info (10281): Verilog HDL Declaration information at toplevel.v(2): object "D6" differs only in case from object "d6" in the same scope
+Info (10281): Verilog HDL Declaration information at toplevel.v(2): object "D7" differs only in case from object "d7" in the same scope

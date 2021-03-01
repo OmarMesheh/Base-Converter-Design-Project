@@ -1,0 +1,56 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.125 ns
+From           : D2
+To             : Register:comb_491|D_FF:comb_6|Nand_gate:comb_7|out~9
+From Clock     : --
+To Clock       : Start
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.696 ns
+From           : Register:comb_491|D_FF:comb_8|Nand_gate:comb_7|out~9
+To             : g6
+From Clock     : Start
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 18.689 ns
+From           : D6
+To             : d6
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -2.349 ns
+From           : D4
+To             : Register:comb_491|D_FF:comb_8|Nand_gate:comb_7|out~9
+From Clock     : --
+To Clock       : Start
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

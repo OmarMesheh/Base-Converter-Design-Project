@@ -1,0 +1,49 @@
+module toplevel (D11,D10,D9,D8,D7,D6,D5,D4,D3,D2,D1,D0,Mode,Start,a , b , c , d , e , f , g, a1 , b1 , c1 , d1 , e1 , f1 , g1,a2 , b2 , c2 , d2 , e2 , f2 , g2 ,a3 , b3 , c3 , d3 , e3 , f3 , g3 , a4 , b4 , c4 , d4 , e4 , f4 , g4 ,a5 , b5 , c5 , d5 , e5 , f5 , g5 , a6 , b6 , c6 , d6 , e6 , f6 , g6 , a7 , b7 , c7 , d7 , e7 , f7 , g7);
+input D11,D10,D9,D8,D7,D6,D5,D4,D3,D2,D1,D0,Mode,Start;
+output a , b , c , d , e , f , g, a1 , b1 , c1 , d1 , e1 , f1 , g1,a2 , b2 , c2 , d2 , e2 , f2 , g2 ,a3 , b3 , c3 , d3 , e3 , f3 , g3 , a4 , b4 , c4 , d4 , e4 , f4 , g4 ,a5 , b5 , c5 , d5 , e5 , f5 , g5 , a6 , b6 , c6 , d6 , e6 , f6 , g6 , a7 , b7 , c7 , d7 , e7 , f7 , g7; 
+
+//SevenSegmentDriver ( A3 , A2 , A1 , A0 , E1 , E2 , E3 , OFF , Start , a , b , c , d , e , f , g );
+
+SevenSegmentDriver ( O3 , O2 , O1 , O0 , 0,0,0,0,1, a , b , c , d , e , f , g ); // ones input
+SevenSegmentDriver ( O7 , O6 , O5 , O4 ,0,0,0,0,1, a1 , b1 , c1 , d1 , e1 , f1 , g1 ); // tens input
+SevenSegmentDriver ( O11 , O10 , O9 , O8 ,0,0,0,0,1, a2 , b2 , c2 , d2 , e2 , f2 , g2 ); // hundreds input
+
+//ModeDisplay(M , a , b , c , d , e , f , g ) ;
+ModeDisplay(Mode , a3 , b3 , c3 , d3 , e3 , f3 , g3 ) ;
+
+//findInvalid ( A3 , A2 , A1 , A0 , E ) ;
+findInvalid ( D3 , D2 , D1 , D0 , E1 ) ;
+findInvalid ( D7 , D6 , D5 , D4 , E2 ) ;
+findInvalid ( D11 , D10 , D9 , D8 , E3 ) ;
+
+//Register(A11,A10,A9,A8,A7,A6,A5,A4,A3, A2, A1, A0, clk, O11,O10,O9,O8,O7,O6,O5,O4,O3,O2,O1, O0)
+Register(D11,D10,D9,D8,D7,D6,D5,D4,D3,D2,D1,D0, Start, O11,O10,O9,O8,O7,O6,O5,O4,O3,O2,O1, O0);
+
+//BCDtoBinaryConverter (O0 , O1 , O2 , O3 , T0 , T1 , T2 , T3 , H0 , H1 , H2 , H3 , digit0 , digit1 , digit2 , digit3 , digit4 , digit5 , digit6 , digit7 , digit8 , digit9 )
+BCDtoBinaryConverter (O0 , O1 , O2 , O3 , O4 , O5 , O6 , O7 , O8 , O9 , O10 , O11 , digit0 , digit1 , digit2 , digit3 , digit4 , digit5 , digit6 , digit7 , digit8 , digit9 );
+
+
+
+//Quad2to1mux (A3,A2,A1,A0,B3,B2,B1,B0,S,O3,O2,O1,O0)
+Quad2to1mux (digit3 , digit2 , digit1 , digit0 , 0 , digit2 , digit1 , digit0 , Mode , A3 , A2 , A1 , A0);
+Quad2to1mux (digit7 , digit6 , digit5 , digit4 , 0 , digit5 , digit4 , digit3 , Mode , A7 , A6 , A5 , A4);
+Quad2to1mux (0 , 0 , digit9 , digit8 , 0 , digit8 , digit7 , digit6 , Mode , A11 , A10 , A9 , A8);
+Quad2to1mux (0 , 0 , 0 , 0 , 0 , 0 , 0 , digit9 , Mode , A15 , A14 , A13 , A12);
+
+//SevenSegmentDriver ( A3 , A2 , A1 , A0 , E1 , E2 , E3 , OFF , Start , a , b , c , d , e , f , g );
+SevenSegmentDriver ( A3 , A2 , A1 , A0 , E1 , E2 , E3 , 0 , Start , a4 , b4 , c4 , d4 , e4 , f4 , g4 );
+
+checkoffDigit1 ( OFF2 ,  A7 , A6 , A5 , A4 , OFF1 ) ;
+//SevenSegmentDriver ( A3 , A2 , A1 , A0 , E1 , E2 , E3 , OFF , Start , a , b , c , d , e , f , g );
+SevenSegmentDriver ( A7 , A6 , A5 , A4 , E1 , E2 , E3 , OFF1 , Start , a5 , b5 , c5 , d5 , e5 , f5 , g5 );
+
+checkoffDigit2 ( A11 , A10 , A9 , A8 ,OFF3 , OFF2 ) ;
+//SevenSegmentDriver ( A3 , A2 , A1 , A0 , E1 , E2 , E3 , OFF , Start , a , b , c , d , e , f , g );
+SevenSegmentDriver ( A11 , A10 , A9 , A8 , E1 , E2 , E3 , OFF2 , Start , a6 , b6 , c6 , d6 , e6 , f6 , g6 );
+
+checkoffDigit3 (A12 , OFF3 ) ;
+//SevenSegmentDriver ( A3 , A2 , A1 , A0 , E1 , E2 , E3 , OFF , Start , a , b , c , d , e , f , g );
+SevenSegmentDriver ( 0 , 0 , 0 , A12 , E1 , E2 , E3 , OFF3 , Start , a7 , b7 , c7 , d7 , e7 , f7 , g7 );
+
+
+endmodule
