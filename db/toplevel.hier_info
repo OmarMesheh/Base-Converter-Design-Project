@@ -1,0 +1,2156 @@
+|toplevel
+D11 => D11~0.IN2
+D10 => D10~0.IN2
+D9 => D9~0.IN2
+D8 => D8~0.IN2
+D7 => D7~0.IN2
+D6 => D6~0.IN2
+D5 => D5~0.IN2
+D4 => D4~0.IN2
+D3 => D3~0.IN2
+D2 => D2~0.IN2
+D1 => D1~0.IN2
+D0 => D0~0.IN2
+Mode => Mode~0.IN5
+Start => Start~0.IN5
+a <= SevenSegmentDriver:comb_4.port9
+b <= SevenSegmentDriver:comb_4.port10
+c <= SevenSegmentDriver:comb_4.port11
+d <= SevenSegmentDriver:comb_4.port12
+e <= SevenSegmentDriver:comb_4.port13
+f <= SevenSegmentDriver:comb_4.port14
+g <= SevenSegmentDriver:comb_4.port15
+a1 <= SevenSegmentDriver:comb_165.port9
+b1 <= SevenSegmentDriver:comb_165.port10
+c1 <= SevenSegmentDriver:comb_165.port11
+d1 <= SevenSegmentDriver:comb_165.port12
+e1 <= SevenSegmentDriver:comb_165.port13
+f1 <= SevenSegmentDriver:comb_165.port14
+g1 <= SevenSegmentDriver:comb_165.port15
+a2 <= SevenSegmentDriver:comb_326.port9
+b2 <= SevenSegmentDriver:comb_326.port10
+c2 <= SevenSegmentDriver:comb_326.port11
+d2 <= SevenSegmentDriver:comb_326.port12
+e2 <= SevenSegmentDriver:comb_326.port13
+f2 <= SevenSegmentDriver:comb_326.port14
+g2 <= SevenSegmentDriver:comb_326.port15
+a3 <= ModeDisplay:comb_487.port1
+b3 <= ModeDisplay:comb_487.port2
+c3 <= ModeDisplay:comb_487.port3
+d3 <= ModeDisplay:comb_487.port4
+e3 <= ModeDisplay:comb_487.port5
+f3 <= ModeDisplay:comb_487.port6
+g3 <= ModeDisplay:comb_487.port7
+a4 <= SevenSegmentDriver:comb_881.port9
+b4 <= SevenSegmentDriver:comb_881.port10
+c4 <= SevenSegmentDriver:comb_881.port11
+d4 <= SevenSegmentDriver:comb_881.port12
+e4 <= SevenSegmentDriver:comb_881.port13
+f4 <= SevenSegmentDriver:comb_881.port14
+g4 <= SevenSegmentDriver:comb_881.port15
+a5 <= SevenSegmentDriver:comb_915.port9
+b5 <= SevenSegmentDriver:comb_915.port10
+c5 <= SevenSegmentDriver:comb_915.port11
+d5 <= SevenSegmentDriver:comb_915.port12
+e5 <= SevenSegmentDriver:comb_915.port13
+f5 <= SevenSegmentDriver:comb_915.port14
+g5 <= SevenSegmentDriver:comb_915.port15
+a6 <= SevenSegmentDriver:comb_917.port9
+b6 <= SevenSegmentDriver:comb_917.port10
+c6 <= SevenSegmentDriver:comb_917.port11
+d6 <= SevenSegmentDriver:comb_917.port12
+e6 <= SevenSegmentDriver:comb_917.port13
+f6 <= SevenSegmentDriver:comb_917.port14
+g6 <= SevenSegmentDriver:comb_917.port15
+a7 <= SevenSegmentDriver:comb_919.port9
+b7 <= SevenSegmentDriver:comb_919.port10
+c7 <= SevenSegmentDriver:comb_919.port11
+d7 <= SevenSegmentDriver:comb_919.port12
+e7 <= SevenSegmentDriver:comb_919.port13
+f7 <= SevenSegmentDriver:comb_919.port14
+g7 <= SevenSegmentDriver:comb_919.port15
+
+
+|toplevel|SevenSegmentDriver:comb_4
+A3 => b~4.IN0
+A3 => a~11.IN0
+A3 => a~7.IN0
+A3 => f~2.IN0
+A3 => e~0.IN0
+A3 => a~0.IN0
+A3 => a~3.IN0
+A2 => b~1.IN0
+A2 => a~11.IN1
+A2 => a~3.IN1
+A2 => e~2.IN0
+A2 => a~0.IN1
+A2 => a~7.IN1
+A1 => g~0.IN0
+A1 => f~2.IN1
+A1 => c~3.IN0
+A1 => c~0.IN1
+A1 => b~4.IN1
+A1 => b~1.IN1
+A1 => a~8.IN0
+A1 => e~2.IN1
+A1 => a~1.IN1
+A1 => a~4.IN0
+A1 => a~12.IN0
+A0 => g~1.IN0
+A0 => f~3.IN0
+A0 => f~0.IN1
+A0 => e~3.IN0
+A0 => e~0.IN1
+A0 => d~0.IN0
+A0 => b~5.IN0
+A0 => b~0.IN0
+A0 => a~13.IN0
+A0 => a~9.IN0
+A0 => a~2.IN1
+A0 => g~3.IN0
+A0 => d~2.IN0
+A0 => c~1.IN0
+A0 => b~2.IN0
+A0 => b~7.IN0
+A0 => a~5.IN0
+E1 => g~5.IN0
+E1 => f~6.IN0
+E1 => e~5.IN0
+E1 => d~4.IN0
+E1 => c~5.IN0
+E1 => b~9.IN0
+E1 => a~15.IN1
+E2 => g~5.IN1
+E2 => f~7.IN0
+E2 => e~6.IN0
+E2 => d~5.IN0
+E2 => c~6.IN0
+E2 => b~10.IN0
+E2 => a~16.IN1
+E3 => g~6.IN0
+E3 => f~8.IN0
+E3 => e~7.IN0
+E3 => d~6.IN0
+E3 => c~7.IN0
+E3 => b~11.IN0
+E3 => a~17.IN1
+OFF => g~9.IN0
+OFF => f~10.IN0
+OFF => e~9.IN0
+OFF => d~8.IN0
+OFF => c~9.IN0
+OFF => b~13.IN0
+OFF => a~19.IN1
+Start => g~8.IN0
+Start => f~9.IN0
+Start => e~8.IN0
+Start => d~7.IN0
+Start => c~8.IN0
+Start => b~12.IN0
+Start => a~18.IN1
+a <= a~19.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~13.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~9.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~8.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~9.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~10.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|SevenSegmentDriver:comb_165
+A3 => b~4.IN0
+A3 => a~11.IN0
+A3 => a~7.IN0
+A3 => f~2.IN0
+A3 => e~0.IN0
+A3 => a~0.IN0
+A3 => a~3.IN0
+A2 => b~1.IN0
+A2 => a~11.IN1
+A2 => a~3.IN1
+A2 => e~2.IN0
+A2 => a~0.IN1
+A2 => a~7.IN1
+A1 => g~0.IN0
+A1 => f~2.IN1
+A1 => c~3.IN0
+A1 => c~0.IN1
+A1 => b~4.IN1
+A1 => b~1.IN1
+A1 => a~8.IN0
+A1 => e~2.IN1
+A1 => a~1.IN1
+A1 => a~4.IN0
+A1 => a~12.IN0
+A0 => g~1.IN0
+A0 => f~3.IN0
+A0 => f~0.IN1
+A0 => e~3.IN0
+A0 => e~0.IN1
+A0 => d~0.IN0
+A0 => b~5.IN0
+A0 => b~0.IN0
+A0 => a~13.IN0
+A0 => a~9.IN0
+A0 => a~2.IN1
+A0 => g~3.IN0
+A0 => d~2.IN0
+A0 => c~1.IN0
+A0 => b~2.IN0
+A0 => b~7.IN0
+A0 => a~5.IN0
+E1 => g~5.IN0
+E1 => f~6.IN0
+E1 => e~5.IN0
+E1 => d~4.IN0
+E1 => c~5.IN0
+E1 => b~9.IN0
+E1 => a~15.IN1
+E2 => g~5.IN1
+E2 => f~7.IN0
+E2 => e~6.IN0
+E2 => d~5.IN0
+E2 => c~6.IN0
+E2 => b~10.IN0
+E2 => a~16.IN1
+E3 => g~6.IN0
+E3 => f~8.IN0
+E3 => e~7.IN0
+E3 => d~6.IN0
+E3 => c~7.IN0
+E3 => b~11.IN0
+E3 => a~17.IN1
+OFF => g~9.IN0
+OFF => f~10.IN0
+OFF => e~9.IN0
+OFF => d~8.IN0
+OFF => c~9.IN0
+OFF => b~13.IN0
+OFF => a~19.IN1
+Start => g~8.IN0
+Start => f~9.IN0
+Start => e~8.IN0
+Start => d~7.IN0
+Start => c~8.IN0
+Start => b~12.IN0
+Start => a~18.IN1
+a <= a~19.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~13.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~9.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~8.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~9.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~10.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|SevenSegmentDriver:comb_326
+A3 => b~4.IN0
+A3 => a~11.IN0
+A3 => a~7.IN0
+A3 => f~2.IN0
+A3 => e~0.IN0
+A3 => a~0.IN0
+A3 => a~3.IN0
+A2 => b~1.IN0
+A2 => a~11.IN1
+A2 => a~3.IN1
+A2 => e~2.IN0
+A2 => a~0.IN1
+A2 => a~7.IN1
+A1 => g~0.IN0
+A1 => f~2.IN1
+A1 => c~3.IN0
+A1 => c~0.IN1
+A1 => b~4.IN1
+A1 => b~1.IN1
+A1 => a~8.IN0
+A1 => e~2.IN1
+A1 => a~1.IN1
+A1 => a~4.IN0
+A1 => a~12.IN0
+A0 => g~1.IN0
+A0 => f~3.IN0
+A0 => f~0.IN1
+A0 => e~3.IN0
+A0 => e~0.IN1
+A0 => d~0.IN0
+A0 => b~5.IN0
+A0 => b~0.IN0
+A0 => a~13.IN0
+A0 => a~9.IN0
+A0 => a~2.IN1
+A0 => g~3.IN0
+A0 => d~2.IN0
+A0 => c~1.IN0
+A0 => b~2.IN0
+A0 => b~7.IN0
+A0 => a~5.IN0
+E1 => g~5.IN0
+E1 => f~6.IN0
+E1 => e~5.IN0
+E1 => d~4.IN0
+E1 => c~5.IN0
+E1 => b~9.IN0
+E1 => a~15.IN1
+E2 => g~5.IN1
+E2 => f~7.IN0
+E2 => e~6.IN0
+E2 => d~5.IN0
+E2 => c~6.IN0
+E2 => b~10.IN0
+E2 => a~16.IN1
+E3 => g~6.IN0
+E3 => f~8.IN0
+E3 => e~7.IN0
+E3 => d~6.IN0
+E3 => c~7.IN0
+E3 => b~11.IN0
+E3 => a~17.IN1
+OFF => g~9.IN0
+OFF => f~10.IN0
+OFF => e~9.IN0
+OFF => d~8.IN0
+OFF => c~9.IN0
+OFF => b~13.IN0
+OFF => a~19.IN1
+Start => g~8.IN0
+Start => f~9.IN0
+Start => e~8.IN0
+Start => d~7.IN0
+Start => c~8.IN0
+Start => b~12.IN0
+Start => a~18.IN1
+a <= a~19.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~13.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~9.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~8.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~9.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~10.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|ModeDisplay:comb_487
+M => d.DATAIN
+M => b.DATAIN
+M => c.DATAIN
+a <= <GND>
+b <= M.DB_MAX_OUTPUT_PORT_TYPE
+c <= M.DB_MAX_OUTPUT_PORT_TYPE
+d <= M.DB_MAX_OUTPUT_PORT_TYPE
+e <= <GND>
+f <= <GND>
+g <= <GND>
+
+
+|toplevel|findInvalid:comb_488
+A3 => E~1.IN0
+A3 => E~0.IN0
+A2 => E~1.IN1
+A1 => E~0.IN1
+A0 => ~NO_FANOUT~
+E <= E~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|findInvalid:comb_489
+A3 => E~1.IN0
+A3 => E~0.IN0
+A2 => E~1.IN1
+A1 => E~0.IN1
+A0 => ~NO_FANOUT~
+E <= E~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|findInvalid:comb_490
+A3 => E~1.IN0
+A3 => E~0.IN0
+A2 => E~1.IN1
+A1 => E~0.IN1
+A0 => ~NO_FANOUT~
+E <= E~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491
+A11 => A11~0.IN1
+A10 => A10~0.IN1
+A9 => A9~0.IN1
+A8 => A8~0.IN1
+A7 => A7~0.IN1
+A6 => A6~0.IN1
+A5 => A5~0.IN1
+A4 => A4~0.IN1
+A3 => A3~0.IN1
+A2 => A2~0.IN1
+A1 => A1~0.IN1
+A0 => A0~0.IN1
+clk => clk~0.IN12
+O11 <= D_FF:comb_15.port2
+O10 <= D_FF:comb_14.port2
+O9 <= D_FF:comb_13.port2
+O8 <= D_FF:comb_12.port2
+O7 <= D_FF:comb_11.port2
+O6 <= D_FF:comb_10.port2
+O5 <= D_FF:comb_9.port2
+O4 <= D_FF:comb_8.port2
+O3 <= D_FF:comb_7.port2
+O2 <= D_FF:comb_6.port2
+O1 <= D_FF:comb_5.port2
+O0 <= D_FF:comb_4.port2
+
+
+|toplevel|Register:comb_491|D_FF:comb_4
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_4|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_4|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_4|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_4|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_4|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_5
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_5|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_5|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_5|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_5|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_5|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_6
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_6|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_6|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_6|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_6|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_6|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_7
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_7|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_7|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_7|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_7|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_7|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_8
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_8|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_8|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_8|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_8|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_8|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_9
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_9|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_9|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_9|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_9|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_9|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_10
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_10|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_10|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_10|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_10|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_10|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_11
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_11|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_11|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_11|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_11|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_11|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_12
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_12|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_12|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_12|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_12|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_12|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_13
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_13|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_13|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_13|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_13|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_13|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_14
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_14|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_14|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_14|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_14|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_14|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_15
+D => D~0.IN2
+clk => clk~0.IN2
+Q <= Q~0.DB_MAX_OUTPUT_PORT_TYPE
+nQ <= nQ~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_15|Invgate:comb_4
+in => out.DATAIN
+out <= in.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_15|Nand_gate:comb_5
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_15|Nand_gate:comb_6
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_15|Nand_gate:comb_7
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Register:comb_491|D_FF:comb_15|Nand_gate:comb_8
+in1 => out~0.IN0
+in2 => out~0.IN1
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492
+O0 => O0~0.IN1
+O1 => O1~0.IN1
+O2 => O2~0.IN1
+O3 => O3~0.IN1
+T0 => T0~0.IN1
+T1 => T1~0.IN1
+T2 => T2~0.IN1
+T3 => T3~0.IN1
+H0 => H0~0.IN1
+H1 => H1~0.IN1
+H2 => H2~0.IN1
+H3 => H3~0.IN1
+digit0 <= tenBitsAdderSubtractor:comb_327.port21
+digit1 <= tenBitsAdderSubtractor:comb_327.port22
+digit2 <= tenBitsAdderSubtractor:comb_327.port23
+digit3 <= tenBitsAdderSubtractor:comb_327.port24
+digit4 <= tenBitsAdderSubtractor:comb_327.port25
+digit5 <= tenBitsAdderSubtractor:comb_327.port26
+digit6 <= tenBitsAdderSubtractor:comb_327.port27
+digit7 <= tenBitsAdderSubtractor:comb_327.port28
+digit8 <= tenBitsAdderSubtractor:comb_327.port29
+digit9 <= tenBitsAdderSubtractor:comb_327.port30
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4
+A0 => A0~0.IN2
+A1 => A1~0.IN2
+A2 => A2~0.IN2
+A3 => A3~0.IN3
+M0 <= <GND>
+M1 <= <GND>
+M2 <= A0~0.DB_MAX_OUTPUT_PORT_TYPE
+M3 <= A1~0.DB_MAX_OUTPUT_PORT_TYPE
+M4 <= A2~0.DB_MAX_OUTPUT_PORT_TYPE
+M5 <= fiveBitsAdderSubtractor:comb_9.port11
+M6 <= fiveBitsAdderSubtractor:comb_9.port12
+M7 <= fiveBitsAdderSubtractor:comb_9.port13
+M8 <= <GND>
+M9 <= M9~0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9
+A0 => A0~0.IN1
+A1 => A1~0.IN1
+A2 => A2~0.IN1
+A3 => A3~0.IN1
+A4 => A4~0.IN1
+B0 => B0~0.IN1
+B1 => B1~0.IN1
+B2 => B2~0.IN1
+B3 => B3~0.IN1
+B4 => B4~0.IN1
+S => S~0.IN6
+S0 <= FA:comb_9.port3
+S1 <= FA:comb_10.port3
+S2 <= FA:comb_11.port3
+S3 <= FA:comb_12.port3
+S4 <= FA:comb_13.port3
+Cout <= FA:comb_13.port4
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_4
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_5
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_6
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_7
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_8
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_9
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_10
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_11
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_12
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_13
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5
+A0 => A0~0.IN1
+A1 => A1~0.IN1
+A2 => A2~0.IN2
+A3 => A3~0.IN2
+M0 <= <GND>
+M1 <= A0~0.DB_MAX_OUTPUT_PORT_TYPE
+M2 <= A1~0.DB_MAX_OUTPUT_PORT_TYPE
+M3 <= fiveBitsAdderSubtractor:comb_7.port11
+M4 <= fiveBitsAdderSubtractor:comb_7.port12
+M5 <= fiveBitsAdderSubtractor:comb_7.port13
+M6 <= fiveBitsAdderSubtractor:comb_7.port14
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7
+A0 => A0~0.IN1
+A1 => A1~0.IN1
+A2 => A2~0.IN1
+A3 => A3~0.IN1
+A4 => A4~0.IN1
+B0 => B0~0.IN1
+B1 => B1~0.IN1
+B2 => B2~0.IN1
+B3 => B3~0.IN1
+B4 => B4~0.IN1
+S => S~0.IN6
+S0 <= FA:comb_9.port3
+S1 <= FA:comb_10.port3
+S2 <= FA:comb_11.port3
+S3 <= FA:comb_12.port3
+S4 <= FA:comb_13.port3
+Cout <= FA:comb_13.port4
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_4
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_5
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_6
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_7
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_8
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_9
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_10
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_11
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_12
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_13
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6
+A0 => A0~0.IN1
+A1 => A1~0.IN1
+A2 => A2~0.IN1
+A3 => A3~0.IN1
+A4 => A4~0.IN1
+A5 => A5~0.IN1
+A6 => A6~0.IN1
+A7 => A7~0.IN1
+A8 => A8~0.IN1
+A9 => A9~0.IN1
+B0 => B0~0.IN2
+B1 => B1~0.IN2
+B2 => B2~0.IN2
+B3 => B3~0.IN2
+B4 => B4~0.IN2
+B5 => ~NO_FANOUT~
+B6 => ~NO_FANOUT~
+B7 => ~NO_FANOUT~
+B8 => ~NO_FANOUT~
+B9 => ~NO_FANOUT~
+S => S~0.IN11
+S0 <= FA:comb_14.port3
+S1 <= FA:comb_15.port3
+S2 <= FA:comb_16.port3
+S3 <= FA:comb_17.port3
+S4 <= FA:comb_18.port3
+S5 <= FA:comb_19.port3
+S6 <= FA:comb_20.port3
+S7 <= FA:comb_21.port3
+S8 <= FA:comb_22.port3
+S9 <= FA:comb_23.port3
+Cout <= FA:comb_23.port4
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_4
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_5
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_6
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_7
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_8
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_9
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_10
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_11
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_12
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_13
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_14
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_15
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_16
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_17
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_18
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_19
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_20
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_21
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_22
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_23
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327
+A0 => A0~0.IN1
+A1 => A1~0.IN1
+A2 => A2~0.IN1
+A3 => A3~0.IN1
+A4 => A4~0.IN1
+A5 => A5~0.IN1
+A6 => A6~0.IN1
+A7 => A7~0.IN1
+A8 => A8~0.IN1
+A9 => A9~0.IN1
+B0 => B0~0.IN2
+B1 => B1~0.IN2
+B2 => B2~0.IN2
+B3 => B3~0.IN2
+B4 => B4~0.IN2
+B5 => ~NO_FANOUT~
+B6 => ~NO_FANOUT~
+B7 => ~NO_FANOUT~
+B8 => ~NO_FANOUT~
+B9 => ~NO_FANOUT~
+S => S~0.IN11
+S0 <= FA:comb_14.port3
+S1 <= FA:comb_15.port3
+S2 <= FA:comb_16.port3
+S3 <= FA:comb_17.port3
+S4 <= FA:comb_18.port3
+S5 <= FA:comb_19.port3
+S6 <= FA:comb_20.port3
+S7 <= FA:comb_21.port3
+S8 <= FA:comb_22.port3
+S9 <= FA:comb_23.port3
+Cout <= FA:comb_23.port4
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_4
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_5
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_6
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_7
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_8
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_9
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_10
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_11
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_12
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_13
+out <= out~0.DB_MAX_OUTPUT_PORT_TYPE
+in1 => out~0.IN0
+in0 => out~0.IN1
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_14
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_15
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_16
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_17
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_18
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_19
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_20
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_21
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_22
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_23
+IN0 => Cout~3.IN0
+IN0 => Cout~0.IN0
+IN0 => SUM~0.IN0
+IN1 => Cout~1.IN0
+IN1 => Cout~0.IN1
+IN1 => SUM~0.IN1
+Cin => Cout~3.IN1
+Cin => Cout~1.IN1
+Cin => SUM~1.IN1
+SUM <= SUM~1.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_493
+A3 => A3~0.IN1
+A2 => A2~0.IN1
+A1 => A1~0.IN1
+A0 => A0~0.IN1
+B3 => B3~0.IN1
+B2 => B2~0.IN1
+B1 => B1~0.IN1
+B0 => B0~0.IN1
+S => S~0.IN4
+O3 <= twotoone_mux:comb_7.port3
+O2 <= twotoone_mux:comb_6.port3
+O1 <= twotoone_mux:comb_5.port3
+O0 <= twotoone_mux:comb_4.port3
+
+
+|toplevel|Quad2to1mux:comb_493|twotoone_mux:comb_4
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_493|twotoone_mux:comb_5
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_493|twotoone_mux:comb_6
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_493|twotoone_mux:comb_7
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_526
+A3 => A3~0.IN1
+A2 => A2~0.IN1
+A1 => A1~0.IN1
+A0 => A0~0.IN1
+B3 => B3~0.IN1
+B2 => B2~0.IN1
+B1 => B1~0.IN1
+B0 => B0~0.IN1
+S => S~0.IN4
+O3 <= twotoone_mux:comb_7.port3
+O2 <= twotoone_mux:comb_6.port3
+O1 <= twotoone_mux:comb_5.port3
+O0 <= twotoone_mux:comb_4.port3
+
+
+|toplevel|Quad2to1mux:comb_526|twotoone_mux:comb_4
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_526|twotoone_mux:comb_5
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_526|twotoone_mux:comb_6
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_526|twotoone_mux:comb_7
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_559
+A3 => A3~0.IN1
+A2 => A2~0.IN1
+A1 => A1~0.IN1
+A0 => A0~0.IN1
+B3 => B3~0.IN1
+B2 => B2~0.IN1
+B1 => B1~0.IN1
+B0 => B0~0.IN1
+S => S~0.IN4
+O3 <= twotoone_mux:comb_7.port3
+O2 <= twotoone_mux:comb_6.port3
+O1 <= twotoone_mux:comb_5.port3
+O0 <= twotoone_mux:comb_4.port3
+
+
+|toplevel|Quad2to1mux:comb_559|twotoone_mux:comb_4
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_559|twotoone_mux:comb_5
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_559|twotoone_mux:comb_6
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_559|twotoone_mux:comb_7
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_656
+A3 => A3~0.IN1
+A2 => A2~0.IN1
+A1 => A1~0.IN1
+A0 => A0~0.IN1
+B3 => B3~0.IN1
+B2 => B2~0.IN1
+B1 => B1~0.IN1
+B0 => B0~0.IN1
+S => S~0.IN4
+O3 <= twotoone_mux:comb_7.port3
+O2 <= twotoone_mux:comb_6.port3
+O1 <= twotoone_mux:comb_5.port3
+O0 <= twotoone_mux:comb_4.port3
+
+
+|toplevel|Quad2to1mux:comb_656|twotoone_mux:comb_4
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_656|twotoone_mux:comb_5
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_656|twotoone_mux:comb_6
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|Quad2to1mux:comb_656|twotoone_mux:comb_7
+S => O~0.IN0
+S => O~1.IN0
+Q1 => O~0.IN1
+Q0 => O~1.IN1
+O <= O~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|SevenSegmentDriver:comb_881
+A3 => b~4.IN0
+A3 => a~11.IN0
+A3 => a~7.IN0
+A3 => f~2.IN0
+A3 => e~0.IN0
+A3 => a~0.IN0
+A3 => a~3.IN0
+A2 => b~1.IN0
+A2 => a~11.IN1
+A2 => a~3.IN1
+A2 => e~2.IN0
+A2 => a~0.IN1
+A2 => a~7.IN1
+A1 => g~0.IN0
+A1 => f~2.IN1
+A1 => c~3.IN0
+A1 => c~0.IN1
+A1 => b~4.IN1
+A1 => b~1.IN1
+A1 => a~8.IN0
+A1 => e~2.IN1
+A1 => a~1.IN1
+A1 => a~4.IN0
+A1 => a~12.IN0
+A0 => g~1.IN0
+A0 => f~3.IN0
+A0 => f~0.IN1
+A0 => e~3.IN0
+A0 => e~0.IN1
+A0 => d~0.IN0
+A0 => b~5.IN0
+A0 => b~0.IN0
+A0 => a~13.IN0
+A0 => a~9.IN0
+A0 => a~2.IN1
+A0 => g~3.IN0
+A0 => d~2.IN0
+A0 => c~1.IN0
+A0 => b~2.IN0
+A0 => b~7.IN0
+A0 => a~5.IN0
+E1 => g~5.IN0
+E1 => f~6.IN0
+E1 => e~5.IN0
+E1 => d~4.IN0
+E1 => c~5.IN0
+E1 => b~9.IN0
+E1 => a~15.IN1
+E2 => g~5.IN1
+E2 => f~7.IN0
+E2 => e~6.IN0
+E2 => d~5.IN0
+E2 => c~6.IN0
+E2 => b~10.IN0
+E2 => a~16.IN1
+E3 => g~6.IN0
+E3 => f~8.IN0
+E3 => e~7.IN0
+E3 => d~6.IN0
+E3 => c~7.IN0
+E3 => b~11.IN0
+E3 => a~17.IN1
+OFF => g~9.IN0
+OFF => f~10.IN0
+OFF => e~9.IN0
+OFF => d~8.IN0
+OFF => c~9.IN0
+OFF => b~13.IN0
+OFF => a~19.IN1
+Start => g~8.IN0
+Start => f~9.IN0
+Start => e~8.IN0
+Start => d~7.IN0
+Start => c~8.IN0
+Start => b~12.IN0
+Start => a~18.IN1
+a <= a~19.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~13.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~9.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~8.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~9.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~10.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|checkoffDigit1:comb_914
+OFF2 => OFF1~3.IN1
+A7 => OFF1~0.IN0
+A6 => OFF1~0.IN1
+A5 => OFF1~1.IN1
+A4 => OFF1~2.IN1
+OFF1 <= OFF1~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|SevenSegmentDriver:comb_915
+A3 => b~4.IN0
+A3 => a~11.IN0
+A3 => a~7.IN0
+A3 => f~2.IN0
+A3 => e~0.IN0
+A3 => a~0.IN0
+A3 => a~3.IN0
+A2 => b~1.IN0
+A2 => a~11.IN1
+A2 => a~3.IN1
+A2 => e~2.IN0
+A2 => a~0.IN1
+A2 => a~7.IN1
+A1 => g~0.IN0
+A1 => f~2.IN1
+A1 => c~3.IN0
+A1 => c~0.IN1
+A1 => b~4.IN1
+A1 => b~1.IN1
+A1 => a~8.IN0
+A1 => e~2.IN1
+A1 => a~1.IN1
+A1 => a~4.IN0
+A1 => a~12.IN0
+A0 => g~1.IN0
+A0 => f~3.IN0
+A0 => f~0.IN1
+A0 => e~3.IN0
+A0 => e~0.IN1
+A0 => d~0.IN0
+A0 => b~5.IN0
+A0 => b~0.IN0
+A0 => a~13.IN0
+A0 => a~9.IN0
+A0 => a~2.IN1
+A0 => g~3.IN0
+A0 => d~2.IN0
+A0 => c~1.IN0
+A0 => b~2.IN0
+A0 => b~7.IN0
+A0 => a~5.IN0
+E1 => g~5.IN0
+E1 => f~6.IN0
+E1 => e~5.IN0
+E1 => d~4.IN0
+E1 => c~5.IN0
+E1 => b~9.IN0
+E1 => a~15.IN1
+E2 => g~5.IN1
+E2 => f~7.IN0
+E2 => e~6.IN0
+E2 => d~5.IN0
+E2 => c~6.IN0
+E2 => b~10.IN0
+E2 => a~16.IN1
+E3 => g~6.IN0
+E3 => f~8.IN0
+E3 => e~7.IN0
+E3 => d~6.IN0
+E3 => c~7.IN0
+E3 => b~11.IN0
+E3 => a~17.IN1
+OFF => g~9.IN0
+OFF => f~10.IN0
+OFF => e~9.IN0
+OFF => d~8.IN0
+OFF => c~9.IN0
+OFF => b~13.IN0
+OFF => a~19.IN1
+Start => g~8.IN0
+Start => f~9.IN0
+Start => e~8.IN0
+Start => d~7.IN0
+Start => c~8.IN0
+Start => b~12.IN0
+Start => a~18.IN1
+a <= a~19.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~13.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~9.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~8.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~9.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~10.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|checkoffDigit2:comb_916
+A11 => OFF2~0.IN0
+A10 => OFF2~0.IN1
+A9 => OFF2~1.IN1
+A8 => OFF2~2.IN1
+OFF3 => OFF2~3.IN1
+OFF2 <= OFF2~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|SevenSegmentDriver:comb_917
+A3 => b~4.IN0
+A3 => a~11.IN0
+A3 => a~7.IN0
+A3 => f~2.IN0
+A3 => e~0.IN0
+A3 => a~0.IN0
+A3 => a~3.IN0
+A2 => b~1.IN0
+A2 => a~11.IN1
+A2 => a~3.IN1
+A2 => e~2.IN0
+A2 => a~0.IN1
+A2 => a~7.IN1
+A1 => g~0.IN0
+A1 => f~2.IN1
+A1 => c~3.IN0
+A1 => c~0.IN1
+A1 => b~4.IN1
+A1 => b~1.IN1
+A1 => a~8.IN0
+A1 => e~2.IN1
+A1 => a~1.IN1
+A1 => a~4.IN0
+A1 => a~12.IN0
+A0 => g~1.IN0
+A0 => f~3.IN0
+A0 => f~0.IN1
+A0 => e~3.IN0
+A0 => e~0.IN1
+A0 => d~0.IN0
+A0 => b~5.IN0
+A0 => b~0.IN0
+A0 => a~13.IN0
+A0 => a~9.IN0
+A0 => a~2.IN1
+A0 => g~3.IN0
+A0 => d~2.IN0
+A0 => c~1.IN0
+A0 => b~2.IN0
+A0 => b~7.IN0
+A0 => a~5.IN0
+E1 => g~5.IN0
+E1 => f~6.IN0
+E1 => e~5.IN0
+E1 => d~4.IN0
+E1 => c~5.IN0
+E1 => b~9.IN0
+E1 => a~15.IN1
+E2 => g~5.IN1
+E2 => f~7.IN0
+E2 => e~6.IN0
+E2 => d~5.IN0
+E2 => c~6.IN0
+E2 => b~10.IN0
+E2 => a~16.IN1
+E3 => g~6.IN0
+E3 => f~8.IN0
+E3 => e~7.IN0
+E3 => d~6.IN0
+E3 => c~7.IN0
+E3 => b~11.IN0
+E3 => a~17.IN1
+OFF => g~9.IN0
+OFF => f~10.IN0
+OFF => e~9.IN0
+OFF => d~8.IN0
+OFF => c~9.IN0
+OFF => b~13.IN0
+OFF => a~19.IN1
+Start => g~8.IN0
+Start => f~9.IN0
+Start => e~8.IN0
+Start => d~7.IN0
+Start => c~8.IN0
+Start => b~12.IN0
+Start => a~18.IN1
+a <= a~19.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~13.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~9.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~8.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~9.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~10.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|checkoffDigit3:comb_918
+A12 => OFF3.DATAIN
+OFF3 <= A12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|toplevel|SevenSegmentDriver:comb_919
+A3 => b~4.IN0
+A3 => a~11.IN0
+A3 => a~7.IN0
+A3 => f~2.IN0
+A3 => e~0.IN0
+A3 => a~0.IN0
+A3 => a~3.IN0
+A2 => b~1.IN0
+A2 => a~11.IN1
+A2 => a~3.IN1
+A2 => e~2.IN0
+A2 => a~0.IN1
+A2 => a~7.IN1
+A1 => g~0.IN0
+A1 => f~2.IN1
+A1 => c~3.IN0
+A1 => c~0.IN1
+A1 => b~4.IN1
+A1 => b~1.IN1
+A1 => a~8.IN0
+A1 => e~2.IN1
+A1 => a~1.IN1
+A1 => a~4.IN0
+A1 => a~12.IN0
+A0 => g~1.IN0
+A0 => f~3.IN0
+A0 => f~0.IN1
+A0 => e~3.IN0
+A0 => e~0.IN1
+A0 => d~0.IN0
+A0 => b~5.IN0
+A0 => b~0.IN0
+A0 => a~13.IN0
+A0 => a~9.IN0
+A0 => a~2.IN1
+A0 => g~3.IN0
+A0 => d~2.IN0
+A0 => c~1.IN0
+A0 => b~2.IN0
+A0 => b~7.IN0
+A0 => a~5.IN0
+E1 => g~5.IN0
+E1 => f~6.IN0
+E1 => e~5.IN0
+E1 => d~4.IN0
+E1 => c~5.IN0
+E1 => b~9.IN0
+E1 => a~15.IN1
+E2 => g~5.IN1
+E2 => f~7.IN0
+E2 => e~6.IN0
+E2 => d~5.IN0
+E2 => c~6.IN0
+E2 => b~10.IN0
+E2 => a~16.IN1
+E3 => g~6.IN0
+E3 => f~8.IN0
+E3 => e~7.IN0
+E3 => d~6.IN0
+E3 => c~7.IN0
+E3 => b~11.IN0
+E3 => a~17.IN1
+OFF => g~9.IN0
+OFF => f~10.IN0
+OFF => e~9.IN0
+OFF => d~8.IN0
+OFF => c~9.IN0
+OFF => b~13.IN0
+OFF => a~19.IN1
+Start => g~8.IN0
+Start => f~9.IN0
+Start => e~8.IN0
+Start => d~7.IN0
+Start => c~8.IN0
+Start => b~12.IN0
+Start => a~18.IN1
+a <= a~19.DB_MAX_OUTPUT_PORT_TYPE
+b <= b~13.DB_MAX_OUTPUT_PORT_TYPE
+c <= c~9.DB_MAX_OUTPUT_PORT_TYPE
+d <= d~8.DB_MAX_OUTPUT_PORT_TYPE
+e <= e~9.DB_MAX_OUTPUT_PORT_TYPE
+f <= f~10.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~9.DB_MAX_OUTPUT_PORT_TYPE
+
+

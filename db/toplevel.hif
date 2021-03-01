@@ -1,0 +1,966 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+11
+1049
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+ModeDisplay
+# storage
+db|toplevel.(2).cnf
+db|toplevel.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+ModeDisplay.v
+3286058b0f219a992cfec667c61a82c
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+ModeDisplay:comb_487
+}
+# macro_sequence
+
+# end
+# entity
+findInvalid
+# storage
+db|toplevel.(3).cnf
+db|toplevel.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+findInvalid.v
+26a994d7d3145e1a7dfa1a888f3cd5a9
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+findInvalid:comb_488
+findInvalid:comb_489
+findInvalid:comb_490
+}
+# macro_sequence
+
+# end
+# entity
+Register
+# storage
+db|toplevel.(4).cnf
+db|toplevel.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Register.v
+b296bc87434ae3a3a6c613e94bb2237
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Register:comb_491
+}
+# macro_sequence
+
+# end
+# entity
+D_FF
+# storage
+db|toplevel.(5).cnf
+db|toplevel.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+D_FF.v
+a3c67e669917e03d64e94f1c51ac7252
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Register:comb_491|D_FF:comb_4
+Register:comb_491|D_FF:comb_5
+Register:comb_491|D_FF:comb_6
+Register:comb_491|D_FF:comb_7
+Register:comb_491|D_FF:comb_8
+Register:comb_491|D_FF:comb_9
+Register:comb_491|D_FF:comb_10
+Register:comb_491|D_FF:comb_11
+Register:comb_491|D_FF:comb_12
+Register:comb_491|D_FF:comb_13
+Register:comb_491|D_FF:comb_14
+Register:comb_491|D_FF:comb_15
+}
+# macro_sequence
+
+# end
+# entity
+Invgate
+# storage
+db|toplevel.(6).cnf
+db|toplevel.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+library.v
+cb5b778cd8b0ae6dff96fc443243eb2
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Register:comb_491|D_FF:comb_4|Invgate:comb_4
+Register:comb_491|D_FF:comb_5|Invgate:comb_4
+Register:comb_491|D_FF:comb_6|Invgate:comb_4
+Register:comb_491|D_FF:comb_7|Invgate:comb_4
+Register:comb_491|D_FF:comb_8|Invgate:comb_4
+Register:comb_491|D_FF:comb_9|Invgate:comb_4
+Register:comb_491|D_FF:comb_10|Invgate:comb_4
+Register:comb_491|D_FF:comb_11|Invgate:comb_4
+Register:comb_491|D_FF:comb_12|Invgate:comb_4
+Register:comb_491|D_FF:comb_13|Invgate:comb_4
+Register:comb_491|D_FF:comb_14|Invgate:comb_4
+Register:comb_491|D_FF:comb_15|Invgate:comb_4
+}
+# macro_sequence
+
+# end
+# entity
+Nand_gate
+# storage
+db|toplevel.(7).cnf
+db|toplevel.(7).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+library.v
+cb5b778cd8b0ae6dff96fc443243eb2
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Register:comb_491|D_FF:comb_4|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_4|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_4|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_4|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_5|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_5|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_5|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_5|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_6|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_6|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_6|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_6|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_7|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_7|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_7|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_7|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_8|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_8|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_8|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_8|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_9|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_9|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_9|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_9|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_10|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_10|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_10|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_10|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_11|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_11|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_11|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_11|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_12|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_12|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_12|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_12|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_13|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_13|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_13|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_13|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_14|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_14|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_14|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_14|Nand_gate:comb_8
+Register:comb_491|D_FF:comb_15|Nand_gate:comb_5
+Register:comb_491|D_FF:comb_15|Nand_gate:comb_6
+Register:comb_491|D_FF:comb_15|Nand_gate:comb_7
+Register:comb_491|D_FF:comb_15|Nand_gate:comb_8
+}
+# macro_sequence
+
+# end
+# entity
+BCDtoBinaryConverter
+# storage
+db|toplevel.(8).cnf
+db|toplevel.(8).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+BCDtoBinaryConverter.v
+c579df6299a382c3d4deeeccd264fc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+BCDtoBinaryConverter:comb_492
+}
+# macro_sequence
+
+# end
+# entity
+hundredsMultiplier
+# storage
+db|toplevel.(9).cnf
+db|toplevel.(9).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+BCDtoBinaryConverter.v
+c579df6299a382c3d4deeeccd264fc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4
+}
+# macro_sequence
+
+# end
+# entity
+fiveBitsAdderSubtractor
+# storage
+db|toplevel.(10).cnf
+db|toplevel.(10).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+BCDtoBinaryConverter.v
+c579df6299a382c3d4deeeccd264fc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7
+}
+# macro_sequence
+
+# end
+# entity
+Xorgate
+# storage
+db|toplevel.(11).cnf
+db|toplevel.(11).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+library.v
+cb5b778cd8b0ae6dff96fc443243eb2
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_4
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_5
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_6
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_7
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|Xorgate:comb_8
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_4
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_5
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_6
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_7
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|Xorgate:comb_8
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_4
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_5
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_6
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_7
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_8
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_9
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_10
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_11
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_12
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|Xorgate:comb_13
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_4
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_5
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_6
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_7
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_8
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_9
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_10
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_11
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_12
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|Xorgate:comb_13
+}
+# macro_sequence
+
+# end
+# entity
+FA
+# storage
+db|toplevel.(12).cnf
+db|toplevel.(12).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+BCDtoBinaryConverter.v
+c579df6299a382c3d4deeeccd264fc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_9
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_10
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_11
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_12
+BCDtoBinaryConverter:comb_492|hundredsMultiplier:comb_4|fiveBitsAdderSubtractor:comb_9|FA:comb_13
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_9
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_10
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_11
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_12
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5|fiveBitsAdderSubtractor:comb_7|FA:comb_13
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_14
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_15
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_16
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_17
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_18
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_19
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_20
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_21
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_22
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6|FA:comb_23
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_14
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_15
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_16
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_17
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_18
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_19
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_20
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_21
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_22
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327|FA:comb_23
+}
+# macro_sequence
+
+# end
+# entity
+tensMultiplier
+# storage
+db|toplevel.(13).cnf
+db|toplevel.(13).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+BCDtoBinaryConverter.v
+c579df6299a382c3d4deeeccd264fc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+BCDtoBinaryConverter:comb_492|tensMultiplier:comb_5
+}
+# macro_sequence
+
+# end
+# entity
+tenBitsAdderSubtractor
+# storage
+db|toplevel.(14).cnf
+db|toplevel.(14).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+BCDtoBinaryConverter.v
+c579df6299a382c3d4deeeccd264fc
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_6
+BCDtoBinaryConverter:comb_492|tenBitsAdderSubtractor:comb_327
+}
+# macro_sequence
+
+# end
+# entity
+Quad2to1mux
+# storage
+db|toplevel.(15).cnf
+db|toplevel.(15).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+Quad2to1mux.v
+f93130d7c2cb4ffc6f725250d8a311b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Quad2to1mux:comb_493
+Quad2to1mux:comb_526
+Quad2to1mux:comb_559
+Quad2to1mux:comb_656
+}
+# macro_sequence
+
+# end
+# entity
+twotoone_mux
+# storage
+db|toplevel.(16).cnf
+db|toplevel.(16).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+twotoone_mux.v
+645153164d483b4cf213aa3d1228cb38
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+Quad2to1mux:comb_493|twotoone_mux:comb_4
+Quad2to1mux:comb_493|twotoone_mux:comb_5
+Quad2to1mux:comb_493|twotoone_mux:comb_6
+Quad2to1mux:comb_493|twotoone_mux:comb_7
+Quad2to1mux:comb_526|twotoone_mux:comb_4
+Quad2to1mux:comb_526|twotoone_mux:comb_5
+Quad2to1mux:comb_526|twotoone_mux:comb_6
+Quad2to1mux:comb_526|twotoone_mux:comb_7
+Quad2to1mux:comb_559|twotoone_mux:comb_4
+Quad2to1mux:comb_559|twotoone_mux:comb_5
+Quad2to1mux:comb_559|twotoone_mux:comb_6
+Quad2to1mux:comb_559|twotoone_mux:comb_7
+Quad2to1mux:comb_656|twotoone_mux:comb_4
+Quad2to1mux:comb_656|twotoone_mux:comb_5
+Quad2to1mux:comb_656|twotoone_mux:comb_6
+Quad2to1mux:comb_656|twotoone_mux:comb_7
+}
+# macro_sequence
+
+# end
+# entity
+checkoffDigit1
+# storage
+db|toplevel.(17).cnf
+db|toplevel.(17).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+checkoffDigit1.v
+a03a2d3a4c90da6518c24a61dd4b8e
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+checkoffDigit1:comb_914
+}
+# macro_sequence
+
+# end
+# entity
+OutputDigit1
+# storage
+db|toplevel.(18).cnf
+db|toplevel.(18).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+OutputDigit1.v
+eb17a7e3c4a566c8e55b3298f9257448
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+checkoffDigit2
+# storage
+db|toplevel.(19).cnf
+db|toplevel.(19).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+checkoffDigit2.v
+86743f9e3b31524a2bfd65c4c0bb2014
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+checkoffDigit2:comb_916
+}
+# macro_sequence
+
+# end
+# entity
+OutputDigit2
+# storage
+db|toplevel.(20).cnf
+db|toplevel.(20).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+OutputDigit2.v
+6064dc695e4aac5fa4eaa77ba5df3b7
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# macro_sequence
+
+# end
+# entity
+checkoffDigit3
+# storage
+db|toplevel.(21).cnf
+db|toplevel.(21).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+checkoffDigit3.v
+4cb798197fe3b6922cb2cd86bd5660
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+checkoffDigit3:comb_918
+}
+# macro_sequence
+
+# end
+# entity
+toplevel
+# storage
+db|toplevel.(0).cnf
+db|toplevel.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+toplevel.v
+f7a520b8873d683dcd6efb479a6611d6
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+SevenSegmentDriver
+# storage
+db|toplevel.(1).cnf
+db|toplevel.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+SevenSegmentDriver.v
+3ad67df41e4a9f272366b77bc974c4f9
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+SevenSegmentDriver:comb_4
+SevenSegmentDriver:comb_165
+SevenSegmentDriver:comb_326
+SevenSegmentDriver:comb_881
+SevenSegmentDriver:comb_915
+SevenSegmentDriver:comb_917
+SevenSegmentDriver:comb_919
+}
+# macro_sequence
+
+# end
+# complete
+
